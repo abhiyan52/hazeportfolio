@@ -8,10 +8,16 @@
     <title>Abhiyan Timilsina | AI Engineer Portfolio</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <!-- WebLLM for Browser-local AI -->
+    <script type="module">
+        import * as webllm from "https://esm.run/@mlc-ai/web-llm";
+        window.webllm = webllm;
+    </script>
 </head>
 
 <body>
@@ -26,9 +32,12 @@
         <ul id="menu" class="shadow">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">AI Projects</a></li>
+            <li><a href="#freelance">Freelancing</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#publications">Publications</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#chatbot">Digital Twin Chatbot</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </header>
@@ -44,9 +53,26 @@
                 <a href="#contact" class="btn-outline">Let's Collaborate</a>
             </div>
             <div class="hero-metrics">
-                <div class="metric-card"><strong>4+ Years</strong><span>Engineering Experience</span></div>
-                <div class="metric-card"><strong>LLM & Agents</strong><span>Applied AI Delivery</span></div>
-                <div class="metric-card"><strong>Cloud Native</strong><span>AWS • Azure • CI/CD</span></div>
+                <div class="interest-card">
+                    <i class="fa fa-microchip"></i>
+                    <strong>AI Agents</strong>
+                    <span>LLM Orchestration & RAG</span>
+                </div>
+                <div class="interest-card">
+                    <i class="fa fa-line-chart"></i>
+                    <strong>Financial Markets</strong>
+                    <span>Trading & FinTech Systems</span>
+                </div>
+                <div class="interest-card">
+                    <i class="fa fa-leaf"></i>
+                    <strong>Philosophy</strong>
+                    <span>Mindfulness & Growth</span>
+                </div>
+                <div class="interest-card">
+                    <i class="fa fa-database"></i>
+                    <strong>Scale</strong>
+                    <span>High-Performance Backend</span>
+                </div>
             </div>
         </div>
         <div id="lead-down">
@@ -62,13 +88,18 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        I started my journey as a backend engineer and evolved into a full-stack AI engineer focused on applied machine learning, intelligent automation, and AI product development.
+                        Senior Backend &amp; AI Engineer with <strong>7+ years of experience</strong> designing scalable
+                        microservices, distributed systems, and production-grade AI automation platforms.
                     </p>
                     <p>
-                        I design and ship systems that blend robust backend architecture with modern LLM workflows: RAG pipelines, prompt orchestration, agentic tooling, and real-time integrations.
+                        Strong expertise in <strong>Python</strong>, event-driven architectures, and <strong>LLM-powered
+                            workflows</strong>, including agent-based systems built with LangChain and LangGraph.
+                        Experienced in deploying cloud-native infrastructure on AWS and integrating intelligent
+                        automation into enterprise FinTech and Intelligent Document Processing environments.
                     </p>
                     <p>
-                        Today, I'm looking for AI engineering roles where I can build intelligent products end-to-end, collaborate with fast teams, and turn cutting-edge models into practical user impact.
+                        I thrive in dynamic environments, balancing technical depth with strong communication and an
+                        innovation-driven mindset — with a track record of delivering measurable, impactful solutions.
                     </p>
                 </div>
             </div>
@@ -78,118 +109,469 @@
     <section id="experience" class="background-alt">
         <h2 class="heading reveal">Experience</h2>
         <div id="experience-timeline" class="reveal">
-            <div data-date="April 2020 – Present">
-                <h3>i3systems.ai</h3>
-                <h4>Senior Software Developer</h4>
+            <div data-date="June 2023 – Present">
+                <h3><a href="https://www.openenvoy.com/" target="_blank">Openenvoy</a></h3>
+                <h4>Senior Software Engineer — AP Automation &amp; IDP</h4>
                 <ul>
-                    <li>Built backend platforms with Python (Django/Flask) and production-grade API design.</li>
-                    <li>Delivered distributed workflows using Celery, Redis, and asynchronous processing patterns.</li>
-                    <li>Integrated AWS/Azure services for deployment, observability, and scalable infrastructure.</li>
-                    <li>Mentored engineers via design reviews, pair debugging, and architecture guidance.</li>
+                    <li>Led a pilot agentic extraction pipeline powered by LangChain, LangGraph, Gemini LLM and a
+                        rule-based system that autonomously parses and validates invoices, delivering an effective
+                        <strong>10% increase</strong> in reviewer capacity without new hires.
+                    </li>
+                    <li>Built an Accounts Receivable automation platform with Python/FastAPI, PostgreSQL and AWS SQS
+                        that cut manual payment handling by <strong>70%</strong> and is projected to process <strong>USD
+                            $1.2B</strong> in its first year.</li>
+                    <li>Designed and implemented Python/Django/Celery pipeline on AWS S3 + SQS ingesting <strong>500k
+                            invoices/month</strong> at <strong>99.9% uptime</strong>.</li>
+                    <li>Designed a rule-based validation engine that flags problematic documents faster, cuts downstream
+                        review hours and boosts accuracy by <strong>~20%</strong>.</li>
+                    <li>Built a natural language analytics dashboard enabling analysts to surface invoice insights in
+                        real time, saving around <strong>8 hours</strong> of manual analyst effort weekly.</li>
+                    <li>Re-engineered client-specific extraction pipelines that lifted document-level extraction
+                        accuracy <strong>20–30%</strong> within the first two weeks of onboarding — no extra training
+                        data required.</li>
+                </ul>
+            </div>
+            <div data-date="April 2020 – June 2023">
+                <h3><a href="https://i3systems.ai" target="_blank">i3systems.ai</a></h3>
+                <h4>Software Engineer II — FinTech &amp; InsuranceTech</h4>
+                <ul>
+                    <li>Designed and developed high-performance RESTful APIs using Python and Django to support
+                        underwriting and claims adjudication workflows.</li>
+                    <li>Optimized PostgreSQL and MySQL databases through sharding, partitioning, and indexing
+                        strategies, supporting <strong>10,000+ transactions/second</strong> and reducing query latency
+                        by <strong>30%</strong>.</li>
+                    <li>Designed a configurable clinical rule engine that automated COVID and non-COVID triage, reducing
+                        insurance claim approval time from <strong>over 3 hours to under 60 minutes</strong> — earning
+                        national television coverage.</li>
+                    <li>Built an embedding-based fraud detection system using BERT and Milvus vector database to
+                        identify anomalous insurance claims during adjudication.</li>
+                    <li>Architected distributed background task orchestration using Celery and RabbitMQ (chains,
+                        chords), reducing batch processing time by <strong>40%</strong> and improving system throughput.
+                    </li>
+                    <li>Developed Python wrappers for C++ OCR libraries, reducing processing time by
+                        <strong>~90%</strong> and enabling seamless integration into document processing workflows.
+                    </li>
                 </ul>
             </div>
             <div data-date="December 2018 – April 2020">
-                <h3>Mountblue Technologies</h3>
-                <h4>Software Engineering Trainee (Ruby + Python/Django)</h4>
+                <h3><a href="https://www.mountblue.io" target="_blank">MountBlue Technologies</a></h3>
+                <h4>Full Stack Developer — Ruby on Rails + JavaScript</h4>
                 <ul>
-                    <li>Built full-stack products with Ruby, JavaScript, and Python-based backends.</li>
-                    <li>Contributed to ATS systems, payment workflows, and streaming platform features.</li>
-                    <li>Collaborated directly with client teams to ship business-critical modules.</li>
+                    <li>Built a real-time collaboration platform (video, code sharing, document collaboration) serving
+                        <strong>1,000+ active users</strong> using Ruby on Rails and JavaScript.
+                    </li>
+                    <li>Developed an Applicant Tracking System (ATS) with interview scheduling, calendar integration,
+                        and automated notification workflows.</li>
+                    <li>Integrated third-party APIs (Indeed) to streamline job posting and candidate management,
+                        reducing manual processes by <strong>60%</strong>.</li>
+                    <li>Contributed to backend feature development and UI improvements, enhancing platform usability and
+                        engagement.</li>
                 </ul>
             </div>
-            <div data-date="September 2018 – December 2018">
-                <h3>Krrenova</h3>
-                <h4>MEAN Stack Developer</h4>
+            <div data-date="December 2021 – Present">
+                <h3>Freelance Developer &amp; AI Consultant</h3>
+                <h4>Independent Projects</h4>
                 <ul>
-                    <li>Implemented CRUD backend services and Angular SPA modules.</li>
-                    <li>Built ecommerce features including payment, review, and recommendations.</li>
+                    <li>Designed and deployed a scalable Payment Aggregation Engine with secure transaction handling and
+                        API integrations.</li>
+                    <li>Developed high-accuracy machine learning solutions for agricultural and clinical triage use
+                        cases.</li>
                 </ul>
             </div>
         </div>
     </section>
 
+    <section id="freelance">
+        <h2 class="heading reveal">Freelancing Experience</h2>
+        <div class="freelance-grid reveal">
+            <article class="freelance-card shadow-large">
+                <div class="card-header">
+                    <h3>Prop Firm Scaling &amp; Fintech</h3>
+                    <span class="client-links">
+                        <a href="https://www.goatfundedtrader.com/" target="_blank">GoatFundedTrader</a> •
+                        <a href="https://www.tradetechsolutions.io/" target="_blank">TradeTechSolutions</a>
+                    </span>
+                </div>
+                <ul>
+                    <li>Scaled the enterprise CRM to handle high-volume trader data and multi-region user bases.</li>
+                    <li>Integrated advanced KYC modules with automated verification workflows to streamline onboarding.
+                    </li>
+                    <li>Developed and deployed monitoring services for real-time tracking of platform performance and
+                        transaction health.</li>
+                    <li>Architected platform scaling strategies to ensure 99.9% uptime during peak trading hours.</li>
+                </ul>
+            </article>
+
+            <article class="freelance-card shadow-large">
+                <div class="card-header">
+                    <h3>AI Advisory &amp; AgTech</h3>
+                    <span class="client-links">
+                        <a href="https://www.facebook.com/Avocadotechno/" target="_blank">Avocado Technology</a>
+                    </span>
+                </div>
+                <ul>
+                    <li>Served as AI Advisor, leading the architectural design of a crop disease detection system.</li>
+                    <li>Consulted on model selection and data processing pipelines for high-accuracy image recognition.
+                    </li>
+                    <li>Prototyped machine learning solutions for early detection of agricultural anomalies.</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
     <section id="projects">
-        <h2 class="heading reveal">AI Projects</h2>
+        <h2 class="heading reveal">Projects</h2>
         <div class="project-grid reveal">
             <article class="project-card shadow-large">
-                <h3>Digital Twin Chatbot</h3>
-                <p>A conversational assistant trained to represent my technical style, expertise, and project experience—so recruiters and teams can “talk to my digital twin.”</p>
-                <ul>
-                    <li>Persona-tuned prompt design</li>
-                    <li>Conversation memory simulation</li>
-                    <li>Tool-ready architecture for future integrations</li>
-                </ul>
+                <h3>Instagram Sales Bot</h3>
+                <p>An agentic sales bot for Instagram DMs that automates lead qualification, product recommendations,
+                    and follow-ups using LLM-powered conversation flows.</p>
+                <div class="project-links">
+                    <a href="https://github.com/symbiosissolutions/insta-salesbot" target="_blank"
+                        class="btn-project"><i class="fa fa-github"></i> View on GitHub</a>
+                </div>
             </article>
             <article class="project-card shadow-large">
-                <h3>Public LLM Endpoint Playground</h3>
-                <p>Integrated a no-key public endpoint at <code>https://mlvoca.com/api/generate</code> to prototype low-friction LLM experiences with TinyLlama and DeepSeek-R1 1.5B.</p>
-                <ul>
-                    <li>No API key required</li>
-                    <li>Model switch support</li>
-                    <li>Fast prototyping for demo features</li>
-                </ul>
+                <h3>Real-Time Collaboration App for Developers</h3>
+                <p>A collaborative platform (Blip) enabling real-time video, code sharing, and document collaboration
+                    for developer teams.</p>
+                <div class="project-links">
+                    <a href="https://github.com/abhiyan52/blip" target="_blank" class="btn-project"><i
+                            class="fa fa-github"></i> View on GitHub</a>
+                </div>
             </article>
             <article class="project-card shadow-large">
-                <h3>AI Workflow Automation</h3>
-                <p>Designed backend pipelines for document processing and rule-based decision engines using asynchronous workers and cloud-native deployment patterns.</p>
-                <ul>
-                    <li>Task queues with Celery + Redis</li>
-                    <li>Scalable API services</li>
-                    <li>Observability-first engineering</li>
-                </ul>
+                <h3>Blink-to-Text App</h3>
+                <p>Final year engineering project — an assistive communication system that translates eye blinks into
+                    text, enabling hands-free input for accessibility use cases.</p>
+                <div class="project-links">
+                    <a href="https://github.com/abhiyan52/blinkToText" target="_blank" class="btn-project"><i
+                            class="fa fa-github"></i> View on GitHub</a>
+                </div>
+            </article>
+            <article class="project-card shadow-large">
+                <h3>Team Activity Monitor</h3>
+                <p>A full-stack platform centralizing activity from JIRA and GitHub, featuring an AI-powered natural
+                    language chat interface for real-time project insights and summaries.</p>
+                <div class="project-links">
+                    <a href="https://github.com/abhiyan52/team-activity-monitors" target="_blank" class="btn-project"><i
+                            class="fa fa-github"></i> View on GitHub</a>
+                </div>
+            </article>
+        </div>
+        <div class="projects-footer reveal">
+            <a href="https://github.com/abhiyan52?tab=repositories" target="_blank" class="btn-outline">View More on
+                GitHub</a>
+        </div>
+    </section>
+
+    <section id="publications" class="background-alt">
+        <h2 class="heading reveal">Publications</h2>
+        <div class="publications-grid reveal">
+            <article class="pub-card shadow-large">
+                <span class="pub-date">Feb 15, 2026</span>
+                <h3>Governing AI in Analytics: Building a Deterministic NLQ System</h3>
+                <p>Natural Language Query systems look deceptively simple, but as any data engineer knows, building
+                    reliable SQL generators requires strict governance...</p>
+                <div class="pub-footer">
+                    <a href="https://abhiyantimilsina.medium.com/governing-ai-in-analytics-building-a-deterministic-nlq-system-c4cb922a3ad4"
+                        target="_blank" class="pub-link">Read on Medium <i class="fa fa-external-link"></i></a>
+                </div>
+            </article>
+            <article class="pub-card shadow-large">
+                <span class="pub-date">Jul 31, 2023</span>
+                <h3>A Comparative Analysis of PDF Extraction Libraries</h3>
+                <p>In the digital age, PDFs are the standard for sharing data. Extracting text from them is a common but
+                    tricky task in data processing pipelines...</p>
+                <div class="pub-footer">
+                    <a href="https://abhiyantimilsina.medium.com/a-comparative-analysis-of-pdf-extraction-libraries-choosing-the-fastest-solution-3b6bd8588498"
+                        target="_blank" class="pub-link">Read on Medium <i class="fa fa-external-link"></i></a>
+                </div>
+            </article>
+            <article class="pub-card shadow-large">
+                <span class="pub-date">Dec 20, 2020</span>
+                <h3>Table Partitioning with MySQL and Django</h3>
+                <p>Partitioning is the process of splitting large tables into smaller parts to aid manageability, query
+                    time, and overall system performance...</p>
+                <div class="pub-footer">
+                    <a href="https://abhiyantimilsina.medium.com/table-partitioning-with-mysql-and-django-2fd5a0c82ed4"
+                        target="_blank" class="pub-link">Read on Medium <i class="fa fa-external-link"></i></a>
+                </div>
+            </article>
+            <article class="pub-card shadow-large">
+                <span class="pub-date">Feb 15, 2020</span>
+                <h3>Understanding closures in JavaScript</h3>
+                <p>A deep dive into one of JavaScript's core concepts, from my early days of snowfall animations to
+                    building complex modern applications...</p>
+                <div class="pub-footer">
+                    <a href="https://abhiyantimilsina.medium.com/understanding-closures-in-javascript-7a884a61ce6a"
+                        target="_blank" class="pub-link">Read on Medium <i class="fa fa-external-link"></i></a>
+                </div>
             </article>
         </div>
     </section>
 
     <section id="skills" class="background-alt">
-        <h2 class="heading reveal">Core Skills</h2>
+        <h2 class="heading reveal">Skills</h2>
         <ul class="reveal">
-            <li>AI Engineering</li>
-            <li>LLM Applications</li>
             <li>Python</li>
-            <li>Django/Flask</li>
+            <li>Django</li>
             <li>FastAPI</li>
-            <li>Prompt Engineering</li>
+            <li>Flask</li>
+            <li>REST APIs</li>
+            <li>Microservices</li>
+            <li>Distributed Systems</li>
+            <li>Event-Driven Architecture</li>
+            <li>LLM / GenAI</li>
             <li>RAG Pipelines</li>
-            <li>Agent Workflows</li>
-            <li>JavaScript</li>
-            <li>Node.js</li>
-            <li>AWS</li>
-            <li>Azure</li>
+            <li>AI Agents</li>
+            <li>LangChain</li>
+            <li>LangGraph</li>
+            <li>Prompt Engineering</li>
+            <li>BERT</li>
+            <li>LayoutLM</li>
+            <li>Sentence Transformers</li>
+            <li>Hugging Face</li>
+            <li>Gemini</li>
+            <li>OpenAI</li>
+            <li>AWS Lambda</li>
+            <li>AWS S3 / SQS / SNS</li>
+            <li>AWS Textract</li>
+            <li>SageMaker</li>
+            <li>Docker</li>
             <li>CI/CD</li>
+            <li>Jenkins</li>
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
             <li>Redis</li>
-            <li>System Design</li>
+            <li>Elasticsearch</li>
+            <li>MongoDB</li>
+            <li>Milvus</li>
+            <li>PGVector</li>
+            <li>Celery</li>
+            <li>RabbitMQ</li>
+            <li>Sharding &amp; Partitioning</li>
+            <li>React</li>
+            <li>JavaScript</li>
+            <li>Ruby on Rails</li>
         </ul>
     </section>
 
-    <section id="chatbot">
-        <div class="container reveal">
-            <div class="chatbot-header">
-                <h2 class="heading">Talk to My Digital Twin (Demo)</h2>
-                <p>This is a dummy chatbot UI showcasing how I build conversational experiences. You can test local mock responses, or trigger a public no-key LLM call for demo purposes.</p>
-            </div>
-
-            <div class="chatbot-layout shadow-large">
-                <div class="chat-window" id="chat-window">
-                    <div class="message bot">Hi, I'm Abhiyan's digital twin 👋 Ask me about AI engineering, backend architecture, or product delivery.</div>
-                    <div class="message bot">Try: “What kind of AI roles are you targeting?”</div>
+    <section id="education">
+        <h2 class="heading reveal">Education</h2>
+        <div class="education-grid reveal">
+            <article class="education-card shadow-large highlight">
+                <div class="ed-icon"><i class="fa fa-university"></i></div>
+                <div class="ed-content">
+                    <span class="ed-date">2014 – 2018</span>
+                    <h3>BMS Institute of Technology &amp; Management</h3>
+                    <h4>B.E. in Information Science and Engineering</h4>
+                    <p class="ed-location">VTU Bangalore, India</p>
+                    <div class="ed-badge">CGPA 7.8 / 10</div>
                 </div>
-                <div class="chat-controls">
-                    <label for="model-select">Model</label>
-                    <select id="model-select">
-                        <option value="tinyllama">TinyLlama</option>
-                        <option value="deepseek-r1:1.5b">DeepSeek-R1 1.5B</option>
-                    </select>
-                    <textarea id="chat-input" placeholder="Ask my digital twin something..."></textarea>
-                    <div class="chat-actions">
-                        <button id="send-dummy" type="button">Send Dummy Reply</button>
-                        <button id="send-llm" type="button">Try Public LLM Endpoint</button>
+            </article>
+
+            <article class="education-card shadow-large">
+                <div class="ed-icon"><i class="fa fa-graduation-cap"></i></div>
+                <div class="ed-content">
+                    <span class="ed-date">2012 – 2014</span>
+                    <h3>Trinity International College</h3>
+                    <h4>High School (PCM — Science)</h4>
+                    <p class="ed-location">Kathmandu, Nepal</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="testimonials" class="background-alt">
+        <h2 class="heading reveal">Testimonials</h2>
+        <div class="testimonials-grid reveal">
+            <article class="testimonial-card shadow-large">
+                <div class="testimonial-header">
+                    <img src="images/recommendations/revanth_mahesh.jpg" alt="Revanth Mahesh" class="testimonial-img">
+                    <div class="testimonial-author">
+                        <h4>Revanth Mahesh</h4>
+                        <p>Senior software engineer | Full stack AI | LLMs | Django| React</p>
                     </div>
-                    <p class="chat-note">Endpoint used: <code>POST https://mlvoca.com/api/generate</code> (public, no API key).</p>
+                </div>
+                <p class="testimonial-text">"Abhiyan is a phenomenal collaborator who brings both deep technical mastery
+                    and a strategic mindset to the table. During our time working together, he was instrumental in
+                    leveraging LLMs to improve our auto-extraction workflows, showing incredible speed of execution
+                    without compromising on precision."</p>
+            </article>
+
+            <article class="testimonial-card shadow-large">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar-placeholder">SB</div>
+                    <div class="testimonial-author">
+                        <h4>Sakshi Bansal</h4>
+                        <p>Software Developer</p>
+                    </div>
+                </div>
+                <p class="testimonial-text">"I can say without hesitation that he is one of the most dependable and
+                    composed professionals I've encountered in my career. Abhiyan brings an exceptional work ethic to
+                    everything he does — he approaches every challenge head-on rather than waiting for problems to
+                    resolve themselves."</p>
+            </article>
+
+            <article class="testimonial-card shadow-large">
+                <div class="testimonial-header">
+                    <img src="images/recommendations/maneesh_rapelly.jpg" alt="Maneesh Rapelly" class="testimonial-img">
+                    <div class="testimonial-author">
+                        <h4>Maneesh Rapelly</h4>
+                        <p>Senior Software Engineer at OpenEnvoy</p>
+                    </div>
+                </div>
+                <p class="testimonial-text">"I'm consistently impressed by his technical expertise and dedication. He's
+                    an exceptionally fast learner, masterfully mastery new technologies like LangChain and integrating
+                    them into our projects with impressive speed and precision."</p>
+            </article>
+
+            <article class="testimonial-card shadow-large">
+                <div class="testimonial-header">
+                    <img src="images/recommendations/sharat_chandra_guduru.jpg" alt="Sharat Chandra Guduru"
+                        class="testimonial-img">
+                    <div class="testimonial-author">
+                        <h4>Sharat Chandra Guduru</h4>
+                        <p>Tech @ OpenEnvoy</p>
+                    </div>
+                </div>
+                <p class="testimonial-text">"Abhiyan is a true full-stack talent with a deep expertise in Python,
+                    Django, and emerging AI technologies like LLMs and LangChain. What sets Abhiyan apart is his
+                    incredible speed of execution and his ability to tackle complex problems with ease."</p>
+            </article>
+
+            <article class="testimonial-card shadow-large">
+                <div class="testimonial-header">
+                    <img src="images/recommendations/anurag_reddy_kalakonda.jpg" alt="Anurag Reddy Kalakonda"
+                        class="testimonial-img">
+                    <div class="testimonial-author">
+                        <h4>Anurag Reddy Kalakonda</h4>
+                        <p>Engineering manager || Bits - Pilani || GenAI + React + React Native(Web/mobile) + Nodejs +
+                            AWS</p>
+                    </div>
+                </div>
+                <p class="testimonial-text">"Abhiyan is an exceptional engineer with a rare combination of technical
+                    depth and speed. During our time together, he consistently delivered high-quality solutions,
+                    especially in backend systems and AI-driven workflows."</p>
+            </article>
+
+            <article class="testimonial-card shadow-large">
+                <div class="testimonial-header">
+                    <img src="images/recommendations/jayesh_patil.jpg" alt="Jayesh Patil" class="testimonial-img">
+                    <div class="testimonial-author">
+                        <h4>Jayesh Patil</h4>
+                        <p>Full Stack Developer at i3systems.ai</p>
+                    </div>
+                </div>
+                <p class="testimonial-text">"Their technical expertise and problem-solving skills are unparalleled,
+                    consistently delivering high-quality solutions. Abhiyan is an exceptional team player, always
+                    willing to collaborate and share knowledge."</p>
+            </article>
+
+            <article class="testimonial-card shadow-large">
+                <div class="testimonial-header">
+                    <img src="images/recommendations/prajakta_joshi.jpg" alt="Prajakta Joshi" class="testimonial-img">
+                    <div class="testimonial-author">
+                        <h4>Prajakta Joshi</h4>
+                        <p>Co-founder OneTap Intelligence | Simplifying the Customer Journey</p>
+                    </div>
+                </div>
+                <p class="testimonial-text">"As a highly skilled software developer, Abhiyan has consistently
+                    demonstrated an impressive ability to deliver high-quality code and solve complex technical
+                    challenges. His expertise spans Development, Production support, Debugging, and Performance
+                    optimization."</p>
+            </article>
+
+            <article class="testimonial-card shadow-large">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar-placeholder">VB</div>
+                    <div class="testimonial-author">
+                        <h4>Vijaya Bhosale</h4>
+                        <p>Senior Software Engineer at OneTap Intelligence</p>
+                    </div>
+                </div>
+                <p class="testimonial-text">"I was impressed by his technical expertise and his ability to deliver
+                    complex projects on time. He has a deep understanding of Python and Django and is always eager to
+                    learn new technologies."</p>
+            </article>
+
+            <article class="testimonial-card shadow-large">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar-placeholder">ST</div>
+                    <div class="testimonial-author">
+                        <h4>Sakshi Tantak</h4>
+                        <p>Senior Software Engineer at i3systems.ai</p>
+                    </div>
+                </div>
+                <p class="testimonial-text">"He is a very fast learner and was able to quickly grasp complex concepts
+                    and translate them into efficient code. He is a great problem solver and is always looking for ways
+                    to improve his work."</p>
+            </article>
+
+            <article class="testimonial-card shadow-large">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar-placeholder">KP</div>
+                    <div class="testimonial-author">
+                        <h4>Krishna Pal</h4>
+                        <p>Software Engineer at i3systems.ai</p>
+                    </div>
+                </div>
+                <p class="testimonial-text">"Abhiyan is an exceptionally talented and dedicated software engineer.
+                    Consistently impressed by his technical prowess and his ability to solve complex problems. He has a
+                    deep understanding of Python and Django."</p>
+            </article>
+        </div>
+        <div class="testimonials-footer reveal">
+            <a href="https://www.linkedin.com/in/abhiyan-timilsina-6b679b142/" target="_blank" class="btn-outline">View
+                All Recommendations on LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- Floating AI Agent -->
+    <div id="ai-chat-widget">
+        <button id="ai-chat-button" class="shadow-large">
+            <div class="bot-icon-container">
+                <img src="images/chatbot/neutral.jpg" alt="AI Agent" class="bot-img-neutral">
+                <img src="images/chatbot/smile.jpg" alt="AI Agent Smiling" class="bot-img-smile">
+            </div>
+            <span class="pulse-ring"></span>
+        </button>
+        <div id="ai-chat-window" class="shadow-large">
+            <div class="chat-header">
+                <div class="bot-info">
+                    <img src="images/chatbot/neutral.jpg" alt="AI Agent" class="header-bot-img">
+                    <div>
+                        <h4>AI Digital Twin</h4>
+                        <p id="chat-status">Ready to boot local AI</p>
+                    </div>
+                </div>
+                <button id="close-chat"><i class="fa fa-times"></i></button>
+            </div>
+            <div id="ai-chat-messages">
+                <div class="message bot">
+                    Hi! I'm Abhiyan's AI Twin. I can run <strong>entirely inside your browser</strong> using your local
+                    GPU.
+                </div>
+                <div class="message bot">
+                    Click "Boot Agent" below to download the tiny model (~150MB) and start chatting.
+                </div>
+            </div>
+            <div class="chat-footer">
+                <div id="boot-container">
+                    <button id="boot-ai" class="btn-primary">Boot Local Agent</button>
+                    <div id="boot-progress" style="display:none;">
+                        <div class="progress-bar"></div>
+                        <span class="progress-text">0%</span>
+                    </div>
+                </div>
+                <div id="chat-input-container" style="display:none;">
+                    <input type="text" id="ai-chat-input" placeholder="Ask me about Abhiyan...">
+                    <button id="send-ai-chat"><i class="fa fa-paper-plane"></i></button>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <section id="contact">
         <h2>Let's Build AI Products Together</h2>
@@ -215,9 +597,12 @@
                 </div>
                 <div class="col-sm-5 social">
                     <ul>
-                        <li><a href="https://github.com/abhiyan52" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                        <li><a href="https://stackoverflow.com/users/6711696/jinja2django" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/abhiyan-timilsina-6b679b142/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href="https://github.com/abhiyan52" target="_blank"><i class="fa fa-github"
+                                    aria-hidden="true"></i></a></li>
+                        <li><a href="https://stackoverflow.com/users/6711696/jinja2django" target="_blank"><i
+                                    class="fa fa-stack-overflow" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/abhiyan-timilsina-6b679b142/" target="_blank"><i
+                                    class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -226,6 +611,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/ai-chat.js"></script>
 </body>
 
 </html>
