@@ -16,6 +16,19 @@
 
     const MODEL_ID = "SmolLM-135M-Instruct-v0.2-q4f16_1-MLC";
 
+    async function loadWebLLMRuntime() {
+        if (window.webllm) return true;
+        try {
+            const module = await import("https://esm.run/@mlc-ai/web-llm");
+            window.webllm = module;
+            return true;
+        } catch (error) {
+            console.error("WebLLM load error:", error);
+            handleFallback("Unable to download the local AI runtime.");
+            return false;
+        }
+    }
+
     async function initEngine() {
         if (isBooted) return;
 
@@ -32,6 +45,10 @@
         // CHECK FOR WEBGPU SUPPORT
         if (!navigator.gpu) {
             handleFallback("WebGPU not supported in this browser.");
+            return;
+        }
+
+        if (!await loadWebLLMRuntime()) {
             return;
         }
 
@@ -65,6 +82,10 @@
         useFallback = true;
         isBooted = true;
         document.getElementById('boot-container').style.display = 'none';
+        const bootProgress = document.getElementById('boot-progress');
+        if (bootProgress) {
+            bootProgress.style.display = 'none';
+        }
         document.getElementById('chat-input-container').style.display = 'flex';
 
         appendBotMessage("<em>Note: WebGPU is unavailable. I've switched to my cloud-based brain so we can still chat!</em>");
